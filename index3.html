@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>CSS文章列表切换</title>
+    <style>
+        dl {
+            position: absolute;
+            width: 370px;
+            height: 170px;
+            border: 10px solid #eee;
+        }
+
+        dd {
+            margin: 0;
+            width: 370px;
+            height: 170px;
+            overflow: hidden;
+        }
+
+        dt {
+            position: absolute;
+            right: 1px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            width: 390px;
+            height: 170px;
+            list-style: none;
+            background: url("http://files.jb51.net/file_images/article/201505/2015513171216300.gif") no-repeat 75% 20px;
+            border: 1px solid #ccc
+        }
+
+        #b {
+            background-position: 75% center
+        }
+
+        #c {
+            background-position: 75% 86%
+        }
+
+        li {
+            width: 335px;
+            height: 27px;
+            font: 12px/27px sans-serif;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        dt a {
+            display: block;
+            margin: 1px;
+            width: 30px;
+            height: 56px;
+            text-align: center;
+            font: 700 12px/55px sans-serif;
+            color: #fff;
+            text-decoration: none;
+            background: #666;
+        }
+
+        dt a:hover {
+            background: orange
+        }
+    </style>
+
+    <head />
+
+<body>
+    <dl><dt><a href="#a" title="">源码</a>
+            <a href="#b" title="">书籍</a>
+            <a href="#c" title="">软件</a>
+        </dt>
+        <dd>
+            <ul id="a">
+                <li><a href="/article/3394.shtml" target="_blank">jQuery 1.3 API 参考手册 CHM</a></li>
+                <li><a href="/article/2877.shtml" target="_blank">《Learning jQuery中文版》 pdf</a></li>
+                <li><a href="/article/2720.shtml" target="_blank">《Ext 最新中文手册》 PDF</a></li>
+                <li><a href="/article/1124.shtml" target="_blank">《Ajax实战——Ajax in Action》 中文电子版 (PDF)</a></li>
+                <li><a href="/article/1005.shtml" target="_blank">《Ajax经典案例开发大全》电子版 PDF 附随书源码</a></li>
+                <li><a href="/article/1003.shtml" target="_blank">《Ajax基础教程》 (PDF) 附随书源代码</a></li>
+            </ul>
+            <ul id="b">
+                <li><a href="/article/1005.shtml" target="_blank">《Ajax经典案例开发大全》电子版 PDF 附随书源码</a></li>
+                <li><a href="/article/1124.shtml" target="_blank">《Ajax实战——Ajax in Action》 中文电子版 (PDF)</a></li>
+                <li><a href="/article/1009.shtml" target="_blank">《基于J2EE的Ajax宝典》（PDF）</a></li>
+                <li><a href="/article/1003.shtml" target="_blank">《Ajax基础教程》 (PDF) 附随书源代码</a></li>
+                <li><a href="/article/1001.shtml" target="_blank">ASP.NET AJAX程序设计第二卷（客户端）中文扫描版</a></li>
+            </ul>
+            <ul id="c">
+                <li><a href="/article/2877.shtml" target="_blank">《Learning jQuery中文版》 pdf</a></li>
+                <li><a href="/article/1108.shtml" target="_blank">《Ajax高级程序设计》电子版（EXE）</a></li>
+                <li><a href="/article/2720.shtml" target="_blank">《Ext 最新中文手册》 PDF</a></li>
+                <li><a href="/article/1002.shtml" target="_blank">ASP.NET环境配置AJAX的视频教程 (EXE)</a></li>
+                <li><a href="/article/3394.shtml" target="_blank">jQuery 1.3 API 参考手册 CHM</a></li>
+                <li><a href="/article/1124.shtml" target="_blank">《Ajax实战》 中文电子版 (PDF)</a></li>
+            </ul>
+        </dd>
+    </dl>
+</body>
+
+</html>
