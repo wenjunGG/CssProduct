@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>一个常用的纯CSS布局的网页</title>
+    <style type="text/css">
+        * {
+            font-size: 12px;
+            font-family: verdana;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #header,
+        #footer {
+            width: 85%;
+            margin: 0 auto;
+            height: 50px;
+        }
+
+        #header {
+            height: 70px;
+            margin-top: 5px;
+            border: solid 1px #000;
+            background: url() no-repeat right -20px;
+        }
+
+        #header h1 {
+            line-height: 40px;
+        }
+
+        #body {
+            position: relative;
+            width: 85%;
+            margin: 3px auto;
+            height: 100%;
+            word-wrop: break-word;
+            word-break: break-all;
+        }
+
+        #sidebar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 200px;
+        }
+
+        #right {
+            width: 240px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        #center {
+            margin: 0 241px 0 201px;
+        }
+
+        #body,
+        #sidebar,
+        #right,
+        #center,
+        #footer {
+            height: 750px;
+            border: solid 1px #000;
+        }
+
+        #footer {
+            height: 50px;
+        }
+
+        #body {
+            border: none;
+        }
+
+        #nav ul {
+            float: left;
+            width: 600px;
+            list-style-type: none;
+            border-bottom: solid 6px #6666CC;
+        }
+
+        #nav ul li {
+            float: left;
+        }
+
+        #nav li a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            width: 50px;
+            padding: 5px;
+        }
+
+        #nav li a:hover {
+            background: #66c;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        dt {
+            border-bottom: dotted 1px #000066;
+            border-top: dotted 1px #006;
+        }
+
+        dt.first {
+            border-top: none;
+        }
+
+        dt {
+            padding: 8px 0px 8px 4px;
+        }
+
+        dd a {
+            display: block;
+            text-indent: 20px;
+            padding: 10px;
+        }
+
+        dd a:hover {
+            font-weight: bold;
+            color: #000;
+            background: #66FFCC;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1>title</h1>
+        <div id="nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ASP</a></li>
+                <li><a href="#">PHP</a></li>
+                <li><a href="#">JSP</a></li>
+                <li><a href="#">ASP.NET</a></li>
+                <li><a href="#">VB</a></li>
+                <li><a href="#">VC</a></li>
+                <li><a href="#">DELPHI</a></li>
+                <li><a href="#">AJAX</a></li>
+                <li><a href="#">SOFT</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="body">
+        <div id="sidebar">
+            <dl>
+                <dt class="first">分类</dt>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+            </dl>
+            <dl>
+                <dt>链接</dt>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+            </dl>
+            <dl>
+                <dt>dt</dt>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+                <dd><a href="#">link</a></dd>
+            </dl>
+        </div>
+        <div id="center">center</div>
+        <div id="right">
+            right
+        </div>
+    </div>
+    <div id="footer">
+        footer
+    </div>
+</body>
+
+</html>
