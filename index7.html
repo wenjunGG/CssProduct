@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>CSS定义层的透明效果</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            background: url(http://files.jb51.net/file_images/article/201505/2015513164008952.jpg);
+            color: #fff;
+            width: 770px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+
+        h1,
+        h2 {
+            color: #77AFC7 !important;
+            margin-bottom: 0;
+            line-height: 1.2em;
+        }
+
+        p {
+            margin-top: 0;
+        }
+
+        a {
+            color: #aaa;
+        }
+
+        a:hover {
+            color: #FFF !important;
+            text-decoration: none;
+        }
+
+        code {
+            background-color: #100;
+            padding: 0.2em 0.5em;
+            display: inline-block;
+        }
+
+        #wrapper {
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #000;
+            opacity: 0.65;
+            -moz-opacity: 0.65;
+            filter: alpha(opacity=65);
+        }
+
+        .container {
+            position: relative;
+            float: left;
+        }
+
+        .content {
+            position: relative;
+            float: left;
+        }
+
+        #column-1 {
+            width: 500px;
+        }
+
+        #column-2 {
+            width: 250px;
+            margin-left: 20px;
+            float: left;
+            display: inline;
+        }
+
+        #column-1 .content {
+            padding: 20px;
+            width: 460px;
+        }
+
+        #column-2 .content {
+            padding: 10px;
+            width: 230px;
+        }
+
+        /* * html #column-1 .overlay {
+            height: expression(document.getElementById("column-1").offsetHeight);
+        }
+
+        * html #column-2 .overlay {
+            height: expression(document.getElementById("column-2").offsetHeight);
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="column-1" class="container">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>透明的网页.</h2>
+                <p>IE6,FF测试通过</p>
+                <p>这是一个透明的网页，还不错吧？实际上是用CSS控制DIV层的半透明状态，这样会使平铺的背景显现出来，看上去酷了不少。</p>
+                <p>By <a href="/">CC-Public Domain</a></p>
+            </div>
+        </div>
+        <div id="column-2" class="container">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>A sidebar</h2>
+                <p>这是右侧，你可以尝试修改一下。</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
