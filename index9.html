@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>js监听滚动条滚动事件-改变元素</title>
+    <style type="text/css">
+        body {
+            background: #F5F5F5;
+            height: 3000px;
+        }
+        #header-top {
+            position: fixed;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 50;
+            height: 40px;
+            text-align: center;
+            background: #ff0000;
+            color: #fff;
+            font-size:20px;
+            line-height: 40px;
+        }
+    </style>
+    <script>
+        window.onscroll=function(){
+            var t =document.documentElement.scrollTop||document.body.scrollTop;
+            var headerTop =document.getElementById("header-top");
+            if( t >=40) {
+                headerTop.style.background="rgba(255,0,255,1)";
+            }else{
+                headerTop.style.background="#ff0000";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="header-top">标题</div>
+</body>
+</html>
